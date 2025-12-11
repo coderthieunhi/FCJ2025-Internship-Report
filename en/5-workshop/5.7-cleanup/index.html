@@ -12,7 +12,7 @@
 
     <link rel="icon" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/favicon.png" type="image/png">
 
-    <title>Internship Report :: Internship Report</title>
+    <title>Clean Up Resources :: Internship Report</title>
 
     
     <link href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/css/nucleus.css?1765453676" rel="stylesheet">
@@ -40,7 +40,7 @@
     
 
   </head>
-  <body class="" data-url="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/">
+  <body class="" data-url="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.7-cleanup/">
     <nav
   id="sidebar"
   class="showVisitedLinks"
@@ -583,7 +583,7 @@
   data-nav-id="/en/5-workshop/"
   title="Workshop"
   class="dd-item 
-        
+        parent
         
         
         "
@@ -866,7 +866,7 @@
   title="Clean Up Resources"
   class="dd-item 
         
-        
+        active
         
         "
 >
@@ -946,7 +946,7 @@
                        
                 <option
                   id="en"
-                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/"
+                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.7-cleanup/"
                   selected
                 >
                   English
@@ -954,7 +954,7 @@
                             
                 <option
                   id="vi"
-                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/vi/"
+                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/vi/5-workshop/5.7-cleanup/"
                 >
                   Tiếng Việt
                 </option>
@@ -1041,45 +1041,180 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/'>Internship Report</a> > <a href='https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/'>Workshop</a> > Clean Up Resources
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#57-clean-up-resources">5.7 Clean Up Resources</a></li>
+    <li><a href="#resources-you-created-and-must-delete">Resources You Created (and Must Delete)</a></li>
+    <li><a href="#step-by-step-cleanup-takes-60-seconds">Step-by-Step Cleanup (Takes 60 Seconds)</a></li>
+    <li><a href="#optional-also-delete-test-users-if-you-want-a-completely-clean-slate">Optional: Also Delete Test Users (if you want a completely clean slate)</a></li>
+    <li><a href="#final-summary--what-youve-accomplished">Final Summary – What You’ve Accomplished</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Clean Up Resources
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-  <a href="#" id="sidebar-toggle" data-sidebar-toggle=""
-    ><i class="fas fa-bars"></i> navigation</a
-  >
-</span>
 
- <h1 id="internship-report">Internship Report</h1>
-<h3 id="student-information">Student Information:</h3>
-<p>  <strong>Full Name:</strong> Phan Doãn Thuận</p>
-<p>  <strong>Phone Number:</strong> 0387371761</p>
-<p>  <strong>Email:</strong> <a href="mailto:thuanphan147159@gmail.com">thuanphan147159@gmail.com</a></p>
-<p>  <strong>University:</strong> FPT University HCM</p>
-<p>  <strong>Major:</strong> Software Engineering</p>
-<p>  <strong>Internship Company:</strong> Amazon Web Services Vietnam Co., Ltd.</p>
-<p>  <strong>Internship Position:</strong> FCJ Cloud Intern</p>
-<p>  <strong>Internship Duration:</strong> From 09/08/2025 to 12/12/2025 (expected)</p>
-<figure><img src="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/avatar.jpg" width="500">
-</figure>
 
-<h3 id="report-content">Report Content</h3>
+	<h2 id="57-clean-up-resources">5.7 Clean Up Resources</h2>
+<p><strong>Delete everything to avoid any charges (even tiny ones)</strong></p>
+<p>You’ve successfully completed the workshop — congratulations!<br>
+Now let’s make sure your AWS account stays <strong>$0.00</strong>.</p>
+<h2 id="resources-you-created-and-must-delete">Resources You Created (and Must Delete)</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Resource</th>
+          <th>Location</th>
+          <th>Cost if Left Running</th>
+          <th>Must Delete?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Cognito User Pool</td>
+          <td>AWS Console → Amazon Cognito</td>
+          <td>Free tier: 50,000 MAU → still $0</td>
+          <td>Recommended</td>
+      </tr>
+      <tr>
+          <td>App Client (inside pool)</td>
+          <td>Inside the User Pool</td>
+          <td>No extra cost</td>
+          <td>Auto-deleted</td>
+      </tr>
+      <tr>
+          <td>Cognito Groups (admin/user)</td>
+          <td>Inside the User Pool</td>
+          <td>No cost</td>
+          <td>Auto-deleted</td>
+      </tr>
+      <tr>
+          <td>Test users (you signed up)</td>
+          <td>Inside the User Pool → Users</td>
+          <td>No cost</td>
+          <td>Optional</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Important:</strong> Amazon Cognito User Pools are <em>free for up to 50,000 monthly active users</em>.<br>
+You will <em>never</em> be charged for this workshop — but it’s still best practice to clean up.</p>
+<h2 id="step-by-step-cleanup-takes-60-seconds">Step-by-Step Cleanup (Takes 60 Seconds)</h2>
 <ol>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/">Worklog</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/2-proposal/">Proposal</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/3-blogstranslated/">Translated Blogs</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/4-eventparticipated/">Events Participated</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/">Workshop</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/6-self-evaluation/">Self-evaluation</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/7-feedback/">Sharing and Feedback</a></li>
+<li>
+<p>Go to the AWS Console → <strong>Amazon Cognito</strong><br>
+→ ⁦https://console.aws.amazon.com/cognito/home⁩</p>
+</li>
+<li>
+<p>Select your region (the one you used, e.g., us-east-1)</p>
+</li>
+<li>
+<p>You’ll see your User Pool (probably named something like my-cognito-app-pool or the default name)</p>
+</li>
+<li>
+<p>Click on your User Pool → <strong>Delete user pool</strong> (top-right button)</p>
+</li>
+<li>
+<p>Type delete in the confirmation box
+<img src="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/5-Workshop/5.7/image3.png" alt="hosted zone"></p>
+</li>
+<li>
+<p>Click <strong>Delete user pool</strong></p>
+</li>
 </ol>
-          
+<p><strong>Done!</strong> Everything is permanently deleted.</p>
+<h2 id="optional-also-delete-test-users-if-you-want-a-completely-clean-slate">Optional: Also Delete Test Users (if you want a completely clean slate)</h2>
+<p>•  Inside the User Pool → <em>Users</em> tab → select any test accounts → <em>Delete</em></p>
+<p>You’re All Set!</p>
+<p>Your AWS account is now clean and back to <em>$0.00</em>.</p>
+<h2 id="final-summary--what-youve-accomplished">Final Summary – What You’ve Accomplished</h2>
+<p>You have built a <strong>2025-standard, production-ready authentication system</strong> using:</p>
+<p>•  Amazon Cognito (fully managed identity)
+•  AWS Amplify Gen 2 (v6+) – the correct, modern, SSR-safe way
+•  Next.js 14 App Router + React Server Components
+•  Role-based access control via Cognito Groups
+•  Protected routes &amp; global auth context
+•  Beautiful, accessible UI with shadcn/ui + Tailwind</p>
+<p>This is <strong>exactly</strong> how professional teams at startups, enterprises, and AWS Partners build authentication today.</p>
+<p><strong>You now have a complete, deployable, real-world project</strong> you can:
+•  Add to your portfolio
+•  Use as a starter template
+•  Deploy instantly to Vercel/Netlify
+•  Show in job interviews</p>
+<p><strong>You absolutely crushed this workshop.</strong></p>
+<p>Now go deploy it, share it, and be proud — you&rsquo;ve earned it!</p>
+<hr>
+<p><strong>Navigation:</strong></p>
+<ul>
+<li><strong>Previous:</strong> <a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.6-testing/">5.6 Full Testing &amp; Verification</a></li>
+<li><strong>Workshop Complete!</strong> 🎉 Return to <a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.1-workshop-overview/">Workshop Overview</a> or <a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/">Main Index</a></li>
+</ul>
+<p><strong>End of Workshop</strong></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
         </div> 
         
 
@@ -1535,6 +1670,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1549,6 +1685,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1780,6 +1919,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1798,6 +1938,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1835,8 +1978,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.6-testing/" title="Full Testing &amp; Verification"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/" title="Worklog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/6-self-evaluation/" title="Self-Assessment" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1889,4 +2034,3 @@
 
   </body>
 </html>
-

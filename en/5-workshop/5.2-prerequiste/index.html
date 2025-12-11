@@ -12,7 +12,7 @@
 
     <link rel="icon" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/favicon.png" type="image/png">
 
-    <title>Internship Report :: Internship Report</title>
+    <title>Prerequiste :: Internship Report</title>
 
     
     <link href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/css/nucleus.css?1765453676" rel="stylesheet">
@@ -40,7 +40,7 @@
     
 
   </head>
-  <body class="" data-url="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/">
+  <body class="" data-url="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.2-prerequiste/">
     <nav
   id="sidebar"
   class="showVisitedLinks"
@@ -583,7 +583,7 @@
   data-nav-id="/en/5-workshop/"
   title="Workshop"
   class="dd-item 
-        
+        parent
         
         
         "
@@ -620,7 +620,7 @@
   title="Prerequiste"
   class="dd-item 
         
-        
+        active
         
         "
 >
@@ -946,7 +946,7 @@
                        
                 <option
                   id="en"
-                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/"
+                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.2-prerequiste/"
                   selected
                 >
                   English
@@ -954,7 +954,7 @@
                             
                 <option
                   id="vi"
-                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/vi/"
+                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/vi/5-workshop/5.2-prerequiste/"
                 >
                   Tiếng Việt
                 </option>
@@ -1041,45 +1041,167 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/'>Internship Report</a> > <a href='https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/'>Workshop</a> > Prerequiste
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-aws-account--permissions">1. AWS Account &amp; Permissions</a></li>
+    <li><a href="#2-local-development-environment">2. Local Development Environment</a>
+      <ul>
+        <li><a href="#required-software"><strong>Required Software</strong></a></li>
+        <li><a href="#verify-installation"><strong>Verify installation</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Prerequiste
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-  <a href="#" id="sidebar-toggle" data-sidebar-toggle=""
-    ><i class="fas fa-bars"></i> navigation</a
-  >
-</span>
 
- <h1 id="internship-report">Internship Report</h1>
-<h3 id="student-information">Student Information:</h3>
-<p>  <strong>Full Name:</strong> Phan Doãn Thuận</p>
-<p>  <strong>Phone Number:</strong> 0387371761</p>
-<p>  <strong>Email:</strong> <a href="mailto:thuanphan147159@gmail.com">thuanphan147159@gmail.com</a></p>
-<p>  <strong>University:</strong> FPT University HCM</p>
-<p>  <strong>Major:</strong> Software Engineering</p>
-<p>  <strong>Internship Company:</strong> Amazon Web Services Vietnam Co., Ltd.</p>
-<p>  <strong>Internship Position:</strong> FCJ Cloud Intern</p>
-<p>  <strong>Internship Duration:</strong> From 09/08/2025 to 12/12/2025 (expected)</p>
-<figure><img src="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/avatar.jpg" width="500">
-</figure>
 
-<h3 id="report-content">Report Content</h3>
+	<h3 id="prerequisites">Prerequisites</h3>
+<p>Before starting the workshop, ensure you have the following requirements ready.</p>
+<hr>
+<h2 id="1-aws-account--permissions">1. AWS Account &amp; Permissions</h2>
+<p>You need an AWS account to create and manage Cognito User Pools and work with Amplify.</p>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>An <strong>AWS Account</strong></li>
+<li>An <strong>IAM user</strong> (not root) with the following permissions:
+<ul>
+<li>AmazonCognitoFullAccess</li>
+<li>IAMUserChangePassword</li>
+<li>AWSCloudFormationFullAccess</li>
+<li>AWSLambda_FullAccess (optional, for triggers)</li>
+<li>AmazonS3FullAccess (for optional hosting or storage)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Steps:</strong></p>
 <ol>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/">Worklog</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/2-proposal/">Proposal</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/3-blogstranslated/">Translated Blogs</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/4-eventparticipated/">Events Participated</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/">Workshop</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/6-self-evaluation/">Self-evaluation</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/7-feedback/">Sharing and Feedback</a></li>
+<li>Create an account at the AWS console.</li>
+<li>Create an IAM user with <strong>Programmatic access + Management Console</strong>.</li>
+<li>Configure your AWS region (recommended: <code>us-east-1</code> or <code>ap-southeast-1</code>).</li>
 </ol>
-          
+<hr>
+<h2 id="2-local-development-environment">2. Local Development Environment</h2>
+<p>Your local machine should be set up for building and running a Next.js + Amplify application.</p>
+<h3 id="required-software"><strong>Required Software</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Version</th>
+          <th>Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Node.js</strong></td>
+          <td>18.x or later</td>
+          <td>Required for Next.js &amp; Amplify</td>
+      </tr>
+      <tr>
+          <td><strong>npm</strong></td>
+          <td>9.x or later</td>
+          <td>Package management</td>
+      </tr>
+      <tr>
+          <td><strong>Git</strong></td>
+          <td>Latest</td>
+          <td>Version control</td>
+      </tr>
+      <tr>
+          <td><strong>Code Editor</strong></td>
+          <td>VS Code (recommended)</td>
+          <td>Development</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CLI (optional)</strong></td>
+          <td>Latest</td>
+          <td>Useful for debugging and credentials setup</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="verify-installation"><strong>Verify installation</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node --version   <span style="color:#75715e"># Should be v18.x or higher</span>
+</span></span><span style="display:flex;"><span>npm --version    <span style="color:#75715e"># Should be v9.x or higher</span>
+</span></span><span style="display:flex;"><span>git --version    <span style="color:#75715e"># Should show a valid version</span>
+</span></span></code></pre></div><hr>
+<p><strong>Navigation:</strong></p>
+<ul>
+<li><strong>Previous:</strong> <a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.1-workshop-overview/">5.1 Workshop Overview</a></li>
+<li><strong>Next Step:</strong> <a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/">5.3 AWS Cognito Setup</a> → Create and configure Cognito User Pool</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
         </div> 
         
 
@@ -1535,6 +1657,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1549,6 +1672,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1566,6 +1692,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1581,6 +1708,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1835,8 +1965,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.1-workshop-overview/" title="Workshop Overview"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/" title="Worklog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/" title="AWS Cognito Setup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1889,4 +2021,3 @@
 
   </body>
 </html>
-

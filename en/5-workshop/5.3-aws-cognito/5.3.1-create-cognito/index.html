@@ -12,7 +12,7 @@
 
     <link rel="icon" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/favicon.png" type="image/png">
 
-    <title>Internship Report :: Internship Report</title>
+    <title>Create a Cognito User Pool :: Internship Report</title>
 
     
     <link href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/css/nucleus.css?1765453676" rel="stylesheet">
@@ -40,7 +40,7 @@
     
 
   </head>
-  <body class="" data-url="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/">
+  <body class="" data-url="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/5.3.1-create-cognito/">
     <nav
   id="sidebar"
   class="showVisitedLinks"
@@ -583,7 +583,7 @@
   data-nav-id="/en/5-workshop/"
   title="Workshop"
   class="dd-item 
-        
+        parent
         
         
         "
@@ -637,7 +637,7 @@
   data-nav-id="/en/5-workshop/5.3-aws-cognito/"
   title="AWS Cognito Setup"
   class="dd-item 
-        
+        parent
         
         
         "
@@ -656,7 +656,7 @@
   title="Create a Cognito User Pool"
   class="dd-item 
         
-        
+        active
         
         "
 >
@@ -946,7 +946,7 @@
                        
                 <option
                   id="en"
-                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/"
+                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/5.3.1-create-cognito/"
                   selected
                 >
                   English
@@ -954,7 +954,7 @@
                             
                 <option
                   id="vi"
-                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/vi/"
+                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/vi/5-workshop/5.3-aws-cognito/5.3.1-create-cognito/"
                 >
                   Tiếng Việt
                 </option>
@@ -1041,45 +1041,228 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/'>Internship Report</a> > <a href='https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/'>Workshop</a> > <a href='https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/'>AWS Cognito Setup</a> > Create a Cognito User Pool
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#create-a-cognito-user-pool">Create a Cognito User Pool</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-create-user-pool-via-aws-console">1. Create User Pool via AWS Console</a>
+      <ul>
+        <li><a href="#step-1--open-cognito-console">Step 1 — Open Cognito Console</a></li>
+        <li><a href="#step-2--create-a-new-user-pool">Step 2 — Create a New User Pool</a></li>
+        <li><a href="#step-3--configure-user-pool-details">Step 3 — Configure User Pool Details</a></li>
+        <li><a href="#step-4--sign-in-options">Step 4 — Sign-in Options</a></li>
+        <li><a href="#step-5--required-attributes">Step 5 — Required Attributes</a></li>
+        <li><a href="#step-6--create-user-pool">Step 6 — Create User Pool</a></li>
+      </ul>
+    </li>
+    <li><a href="#2--create-user-pool-via-aws-cli">2.  Create User Pool via AWS CLI</a>
+      <ul>
+        <li><a href="#step-1-open-powershell-on-aws-web-and-create-user-pool">Step 1 Open powershell on AWS web and Create User Pool</a></li>
+        <li><a href="#step-2--create-an-app-client">Step 2 — Create an App Client</a></li>
+        <li><a href="#step-3--output-example">Step 3 — Output Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Create a Cognito User Pool
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-  <a href="#" id="sidebar-toggle" data-sidebar-toggle=""
-    ><i class="fas fa-bars"></i> navigation</a
-  >
-</span>
 
- <h1 id="internship-report">Internship Report</h1>
-<h3 id="student-information">Student Information:</h3>
-<p>  <strong>Full Name:</strong> Phan Doãn Thuận</p>
-<p>  <strong>Phone Number:</strong> 0387371761</p>
-<p>  <strong>Email:</strong> <a href="mailto:thuanphan147159@gmail.com">thuanphan147159@gmail.com</a></p>
-<p>  <strong>University:</strong> FPT University HCM</p>
-<p>  <strong>Major:</strong> Software Engineering</p>
-<p>  <strong>Internship Company:</strong> Amazon Web Services Vietnam Co., Ltd.</p>
-<p>  <strong>Internship Position:</strong> FCJ Cloud Intern</p>
-<p>  <strong>Internship Duration:</strong> From 09/08/2025 to 12/12/2025 (expected)</p>
-<figure><img src="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/avatar.jpg" width="500">
-</figure>
 
-<h3 id="report-content">Report Content</h3>
+	<h3 id="create-a-cognito-user-pool">Create a Cognito User Pool</h3>
+<p>In this section, you will create a Cognito User Pool using <strong>two methods</strong>:</p>
 <ol>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/">Worklog</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/2-proposal/">Proposal</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/3-blogstranslated/">Translated Blogs</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/4-eventparticipated/">Events Participated</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/">Workshop</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/6-self-evaluation/">Self-evaluation</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/7-feedback/">Sharing and Feedback</a></li>
+<li><strong>AWS Management Console (GUI)</strong></li>
+<li><strong>AWS CLI (Command Line Interface)</strong></li>
 </ol>
-          
+<p>Choose either method depending on your preference or environment.</p>
+<hr>
+<h2 id="1-create-user-pool-via-aws-console">1. Create User Pool via AWS Console</h2>
+<p>This is the standard method using the AWS web interface.</p>
+<hr>
+<h3 id="step-1--open-cognito-console">Step 1 — Open Cognito Console</h3>
+<p>Go to:</p>
+<p><a href="https://console.aws.amazon.com/cognito">https://console.aws.amazon.com/cognito</a></p>
+<hr>
+<h3 id="step-2--create-a-new-user-pool">Step 2 — Create a New User Pool</h3>
+<p><img src="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/5-Workshop/5.3/image1.png" alt="hosted zone"></p>
+<ul>
+<li>Click <strong>Create user pool</strong></li>
+<li>Under <strong>Define your application</strong>, choose<br>
+<strong>Traditional web application</strong></li>
+</ul>
+<hr>
+<h3 id="step-3--configure-user-pool-details">Step 3 — Configure User Pool Details</h3>
+<ul>
+<li>User Application name:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>My web app - Cognito
+</span></span></code></pre></div></li>
+</ul>
+<hr>
+<h3 id="step-4--sign-in-options">Step 4 — Sign-in Options</h3>
+<p><img src="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/5-Workshop/5.3/image2.png" alt="hosted zone"></p>
+<p>Select: Email
+(Users will log in using email addresses)</p>
+<hr>
+<h3 id="step-5--required-attributes">Step 5 — Required Attributes</h3>
+<p>Required attributes:</p>
+<p>email</p>
+<hr>
+<h3 id="step-6--create-user-pool">Step 6 — Create User Pool</h3>
+<p>Click Create user directory to fin</p>
+<hr>
+<h2 id="2--create-user-pool-via-aws-cli">2.  Create User Pool via AWS CLI</h2>
+<p>This option is useful if:</p>
+<ul>
+<li>
+<p>You want automation,</p>
+</li>
+<li>
+<p>You are building IaC pipelines,</p>
+</li>
+<li>
+<p>Or you prefer command-line setup.</p>
+</li>
+</ul>
+<h3 id="step-1-open-powershell-on-aws-web-and-create-user-pool">Step 1 Open powershell on AWS web and Create User Pool</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws cognito-idp create-user-pool <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --pool-name <span style="color:#e6db74">&#34;my-userpool&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --auto-verified-attributes email <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --username-attributes email
+</span></span></code></pre></div><p>This command will:</p>
+<ul>
+<li>
+<p>Create a new user pool named my-userpool</p>
+</li>
+<li>
+<p>Enable email as the username</p>
+</li>
+<li>
+<p>Enable email auto-verification</p>
+</li>
+</ul>
+<h3 id="step-2--create-an-app-client">Step 2 — Create an App Client</h3>
+<p>Run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws cognito-idp create-user-pool-client <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --user-pool-id &lt;YOUR_USERPOOL_ID&gt; <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --client-name <span style="color:#e6db74">&#34;my-app-client&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --generate-secret <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --no-prevent-user-existence-errors <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --allowed-o-auth-flows-user-pool-client <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --allowed-o-auth-flows code <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --allowed-o-auth-scopes <span style="color:#e6db74">&#34;email&#34;</span> <span style="color:#e6db74">&#34;openid&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --callback-urls <span style="color:#e6db74">&#34;http://localhost:3000&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --logout-urls <span style="color:#e6db74">&#34;http://localhost:3000&#34;</span>
+</span></span></code></pre></div><p>Replace:</p>
+<p>&lt;YOUR_USERPOOL_ID&gt;</p>
+<p>with the value returned from Step 1.</p>
+<h3 id="step-3--output-example">Step 3 — Output Example</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>A successful creation returns JSON<span style="color:#960050;background-color:#1e0010">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;UserPool&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Id&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;ap-southeast-1_AbCdEf123&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Name&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;my-userpool&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;UserPoolClient&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;ClientId&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;4ab5exampleid123&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;ClientSecret&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;xyzexamplesecret&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Completed</p>
+<p>You now have a fully configured Cognito User Pool created via:</p>
+<ul>
+<li>
+<p>AWS Console, or</p>
+</li>
+<li>
+<p>AWS CLI</p>
+</li>
+</ul>
+<hr>
+<p><strong>Navigation:</strong></p>
+<ul>
+<li><strong>Previous:</strong> <a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/">5.3 AWS Cognito Setup</a></li>
+<li><strong>Next Step:</strong> <a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/5.3.2-configure-appclient/">5.3.2 Configure App Client</a> → Configure application client settings</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
         </div> 
         
 
@@ -1535,6 +1718,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1549,6 +1733,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1582,6 +1769,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1596,6 +1784,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1612,6 +1801,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1835,8 +2027,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/" title="AWS Cognito Setup"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/" title="Worklog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/5.3-aws-cognito/5.3.2-configure-appclient/" title="Configure App Client" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1889,4 +2083,3 @@
 
   </body>
 </html>
-

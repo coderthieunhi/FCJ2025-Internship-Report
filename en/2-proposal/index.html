@@ -12,7 +12,7 @@
 
     <link rel="icon" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/favicon.png" type="image/png">
 
-    <title>Internship Report :: Internship Report</title>
+    <title>Proposal :: Internship Report</title>
 
     
     <link href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/css/nucleus.css?1765453676" rel="stylesheet">
@@ -40,7 +40,7 @@
     
 
   </head>
-  <body class="" data-url="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/">
+  <body class="" data-url="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/2-proposal/">
     <nav
   id="sidebar"
   class="showVisitedLinks"
@@ -345,7 +345,7 @@
   title="Proposal"
   class="dd-item 
         
-        
+        active
         
         "
 >
@@ -946,7 +946,7 @@
                        
                 <option
                   id="en"
-                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/"
+                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/2-proposal/"
                   selected
                 >
                   English
@@ -954,7 +954,7 @@
                             
                 <option
                   id="vi"
-                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/vi/"
+                  value="https://coderthieunhi.github.io/FCJ2025-Internship-Report/vi/2-proposal/"
                 >
                   Tiếng Việt
                 </option>
@@ -1041,45 +1041,244 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/'>Internship Report</a> > Proposal
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-serverless-aws-solution-for-intelligent-movie-discovery">A Serverless AWS Solution for Intelligent Movie Discovery</a>
+      <ul>
+        <li><a href="#1-executive-summary">1. Executive Summary</a></li>
+        <li><a href="#2-problem-statement">2. Problem Statement</a></li>
+        <li><a href="#3-solution-architecture">3. Solution Architecture</a></li>
+        <li><a href="#4-technical-implementation">4. Technical Implementation</a></li>
+        <li><a href="#5-timeline--milestones">5. Timeline &amp; Milestones</a></li>
+        <li><a href="#6-budget-estimation">6. Budget Estimation</a></li>
+        <li><a href="#7-risk-assessment">7. Risk Assessment</a></li>
+        <li><a href="#8-expected-outcomes">8. Expected Outcomes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Proposal
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-  <a href="#" id="sidebar-toggle" data-sidebar-toggle=""
-    ><i class="fas fa-bars"></i> navigation</a
-  >
-</span>
 
- <h1 id="internship-report">Internship Report</h1>
-<h3 id="student-information">Student Information:</h3>
-<p>  <strong>Full Name:</strong> Phan Doãn Thuận</p>
-<p>  <strong>Phone Number:</strong> 0387371761</p>
-<p>  <strong>Email:</strong> <a href="mailto:thuanphan147159@gmail.com">thuanphan147159@gmail.com</a></p>
-<p>  <strong>University:</strong> FPT University HCM</p>
-<p>  <strong>Major:</strong> Software Engineering</p>
-<p>  <strong>Internship Company:</strong> Amazon Web Services Vietnam Co., Ltd.</p>
-<p>  <strong>Internship Position:</strong> FCJ Cloud Intern</p>
-<p>  <strong>Internship Duration:</strong> From 09/08/2025 to 12/12/2025 (expected)</p>
-<figure><img src="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/avatar.jpg" width="500">
+
+	<p><a href="https://docs.google.com/document/d/1-WtW93MMZPBzKaP8AzaQ2Zy3GQCm-i-ZW2sAS80ZsUg/edit?usp=sharing">Document version of the proposal</a></p>
+<h1 id="rafilm-ai-powered-movie-logging--recommendation-platform">Rafilm: AI-Powered Movie Logging &amp; Recommendation Platform</h1>
+<h2 id="a-serverless-aws-solution-for-intelligent-movie-discovery">A Serverless AWS Solution for Intelligent Movie Discovery</h2>
+<h3 id="1-executive-summary">1. Executive Summary</h3>
+<p>Rafilm is a Letterboxd-inspired movie logging and recommendation platform designed to help general users track their watched films, share reviews, and discover new favorites through AI-powered recommendations. Built as part of the AWS First Cloud Journey (FCJ) internship, Rafilm integrates Amazon Personalize and Bedrock to deliver tailored movie suggestions and conversational recommendations via a chatbot interface.</p>
+<p>The platform runs fully on AWS Serverless architecture, featuring Amplify-hosted Next.js frontend, Lambda-based backend services connected through API Gateway, and DynamoDB for scalable user and movie data storage. TMDb provides external movie data integration, while Amazon Cognito manages user authentication. Rafilm aims to demonstrate a scalable, intelligent, and cost-efficient architecture capable of supporting multi-user access and interactive experiences.</p>
+<h3 id="2-problem-statement">2. Problem Statement</h3>
+<h4 id="whats-the-problem">What’s the Problem?</h4>
+<p>While existing movie platforms like Letterboxd and IMDb offer robust logging and social features, they lack <strong>personalized recommendation systems</strong> and <strong>interactive discovery experiences</strong>. Users often rely on external sources or generic trending lists to find what to watch next, leading to irrelevant or repetitive suggestions.</p>
+<h4 id="the-solution">The Solution</h4>
+<p>Rafilm integrates a <strong>custom recommendation pipeline</strong> powered by <strong>Amazon Personalize</strong>, combined with a <strong>Bedrock LLM chatbot</strong> that interprets user preferences and generates conversational movie recommendations. Users can log movies, write reviews, and receive curated suggestions—all within one seamless experience. Unlike Letterboxd, Rafilm focuses on data-driven personalization and AI-assisted interaction rather than pure social networking.</p>
+<h4 id="benefits-and-return-on-investment">Benefits and Return on Investment</h4>
+<p>By leveraging AWS Serverless services, Rafilm achieves near-zero maintenance cost, pay-per-use scalability, and real-time AI-driven personalization. For the FCJ internship, the project serves as both a <strong>technical showcase</strong> and a <strong>learning artifact</strong> for integrating AI services in serverless architectures. Projected cost remains under $1/month during testing, with AWS Free Tier coverage for most usage.</p>
+<h3 id="3-solution-architecture">3. Solution Architecture</h3>
+<p>Rafilm employs a modular serverless architecture using AWS services for scalability, integration, and cost optimization.
+<figure><img src="https://coderthieunhi.github.io/FCJ2025-Internship-Report/images/2-Proposal/solution-architect-rafilm.jpg" width="500">
 </figure>
-
-<h3 id="report-content">Report Content</h3>
+</p>
+<h4 id="aws-services-used">AWS Services Used</h4>
+<ul>
+<li><strong>AWS Amplify</strong>: Hosts the Next.js frontend for movie browsing, logging, and chatbot interaction.</li>
+<li><strong>Amazon Cognito</strong>: Handles user registration, login, and session management.</li>
+<li><strong>Amazon API Gateway</strong>: Routes client requests to backend Lambda functions.</li>
+<li><strong>AWS Lambda</strong>: Executes serverless business logic (e.g., CRUD for reviews, fetching TMDb data, triggering recommendations).</li>
+<li><strong>Amazon DynamoDB</strong>: Stores user logs, movie interactions, and preferences.</li>
+<li><strong>Amazon Personalize</strong>: Trains and serves personalized recommendation models.</li>
+<li><strong>Amazon Bedrock</strong>: Provides conversational chatbot functionality for recommendation dialogue.</li>
+<li><strong>Amazon S3</strong>: Stores static assets and backups for logs and model outputs.</li>
+</ul>
+<h4 id="component-design">Component Design</h4>
+<ul>
+<li><strong>Frontend (Next.js)</strong>: User-friendly interface for movie discovery, logging, and chat-based recommendations.</li>
+<li><strong>Backend (Lambda + API Gateway)</strong>: Stateless logic layer handling user operations, movie fetching, and recommendation retrieval.</li>
+<li><strong>Data Layer (DynamoDB + S3)</strong>: Stores structured user interactions and movie metadata for model training.</li>
+<li><strong>AI Layer (Personalize + Bedrock)</strong>: Personalize analyzes historical user interactions; Bedrock chatbot provides natural language access to personalized results.</li>
+<li><strong>Authentication (Cognito)</strong>: Securely manages multi-user access.</li>
+</ul>
+<h4 id="architecture-overview">Architecture Overview</h4>
 <ol>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/">Worklog</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/2-proposal/">Proposal</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/3-blogstranslated/">Translated Blogs</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/4-eventparticipated/">Events Participated</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/5-workshop/">Workshop</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/6-self-evaluation/">Self-evaluation</a></li>
-<li><a href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/7-feedback/">Sharing and Feedback</a></li>
+<li>Users log in via Cognito and interact with the Next.js interface.</li>
+<li>Actions such as logging or rating trigger API Gateway → Lambda → DynamoDB workflows.</li>
+<li>The Bedrock chatbot accesses Personalize results to generate conversational movie suggestions.</li>
+<li>Amplify hosts the frontend for seamless deployment and scalability.</li>
 </ol>
-          
+<h3 id="4-technical-implementation">4. Technical Implementation</h3>
+<h4 id="implementation-phases">Implementation Phases</h4>
+<ol>
+<li><strong>Architecture Design (Month 1):</strong> Research AWS serverless and AI integration patterns; finalize architecture diagrams.</li>
+<li><strong>Prototype Integration (Month 2):</strong> Implement Amplify hosting, Cognito authentication, and Lambda-based backend APIs.</li>
+<li><strong>Recommendation System (Month 3):</strong> Connect Personalize and Bedrock for end-to-end AI recommendation and chatbot response.</li>
+<li><strong>Testing &amp; Deployment:</strong> Conduct functional testing, optimize costs, and deploy production-ready version on Amplify.</li>
+</ol>
+<h4 id="technical-requirements">Technical Requirements</h4>
+<ul>
+<li><strong>Frontend:</strong> Next.js + React hosted via AWS Amplify, using TMDb API for movie data.</li>
+<li><strong>Backend:</strong> AWS Lambda (Node.js runtime) connected through API Gateway.</li>
+<li><strong>Database:</strong> Amazon DynamoDB for scalable user and review data.</li>
+<li><strong>AI Components:</strong> Amazon Personalize (user-item recommendations) and Bedrock (chatbot dialogue).</li>
+<li><strong>Authentication:</strong> Amazon Cognito for secure, multi-user access.</li>
+<li><strong>Automation:</strong> AWS SDK &amp; CloudFormation for provisioning; AWS SAM for deployment workflows.</li>
+</ul>
+<h3 id="5-timeline--milestones">5. Timeline &amp; Milestones</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Phase</th>
+          <th>Duration</th>
+          <th>Key Deliverables</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Month 1</td>
+          <td>Research &amp; Architecture</td>
+          <td>AWS design finalizing</td>
+      </tr>
+      <tr>
+          <td>Month 2</td>
+          <td>Core Development</td>
+          <td>Amplify hosting, Cognito setup, Lambda API, DynamoDB schema</td>
+      </tr>
+      <tr>
+          <td>Month 3</td>
+          <td>AI Integration &amp; Testing</td>
+          <td>Personalize training, Bedrock chatbot, system deployment</td>
+      </tr>
+      <tr>
+          <td>Post-Launch</td>
+          <td>Continuous Improvement</td>
+          <td>Cost optimization, new features, UX refinement</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="6-budget-estimation">6. Budget Estimation</h3>
+<p><strong>Estimated Monthly Cost:</strong> $40.09 USD ($481.08 for 12 months)</p>
+<p>The cost estimate of this project is projected in this link: <a href="https://calculator.aws/#/estimate?id=dab7fb57dabfb76041cdba98ac2bac7ba9630046">https://calculator.aws/#/estimate?id=dab7fb57dabfb76041cdba98ac2bac7ba9630046</a></p>
+<p>The monthly cost estimate of <strong>$40.09 USD</strong> is calculated based on the following specific usage assumptions derived from the AWS Pricing Calculator:</p>
+<ul>
+<li><strong>Standard Usage:</strong> Assumes <strong>10,000 requests per month</strong> for both <strong>AWS Lambda</strong> and <strong>Amazon API Gateway</strong>.</li>
+<li><strong>User Base:</strong> Assumes a maximum of <strong>10,000 Monthly Active Users (MAU)</strong> for <strong>Amazon Cognito</strong>.</li>
+<li><strong>AI/ML Usage (Primary Cost Driver):</strong>
+<ul>
+<li><strong>Amazon Bedrock</strong> is estimated for continuous operation (24 hours per day) with an average of <strong>1 request per minute</strong> and <strong>100 input/output tokens per request</strong>.</li>
+<li><strong>Amazon Personalize</strong> includes <strong>1 GB of data ingested</strong> and <strong>15 training hours per month</strong>.</li>
+</ul>
+</li>
+<li><strong>Security Overhead:</strong> Assumes use of <strong>1 AWS WAF Web ACL</strong> with 4 Rules and 3 Managed Rule Groups.</li>
+<li><strong>Data Storage:</strong> Assumes <strong>0.5 GB</strong> of data storage in <strong>Amazon DynamoDB</strong>.</li>
+</ul>
+<h3 id="7-risk-assessment">7. Risk Assessment</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Risk</th>
+          <th>Probability</th>
+          <th>Impact</th>
+          <th>Mitigation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>API rate limits from TMDb</td>
+          <td>Medium</td>
+          <td>Medium</td>
+          <td>Cache requests via Lambda</td>
+      </tr>
+      <tr>
+          <td>Model training cost escalation</td>
+          <td>Low</td>
+          <td>Medium</td>
+          <td>Use limited training dataset for testing</td>
+      </tr>
+      <tr>
+          <td>Chatbot latency</td>
+          <td>Medium</td>
+          <td>Low</td>
+          <td>Optimize Bedrock model type and response size</td>
+      </tr>
+      <tr>
+          <td>Authentication or token expiry</td>
+          <td>Medium</td>
+          <td>Low</td>
+          <td>Use short-lived JWTs and refresh tokens</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="8-expected-outcomes">8. Expected Outcomes</h3>
+<h4 id="technical-improvements">Technical Improvements</h4>
+<ul>
+<li>Demonstrates <strong>serverless integration</strong> of AI/ML and LLM services in real-world use.</li>
+<li>Establishes a reusable AWS architecture for recommendation-based apps.</li>
+</ul>
+<h4 id="long-term-value">Long-Term Value</h4>
+<ul>
+<li>Provides a foundation for future expansion into a <strong>social movie discovery network</strong>.</li>
+<li>Serves as an <strong>AWS FCJ internship showcase project</strong> highlighting scalability, personalization, and conversational AI.</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
         </div> 
         
 
@@ -1323,6 +1522,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1335,6 +1535,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1835,8 +2038,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/1.12-week12/" title="Week 12 Worklog"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/1-worklog/" title="Worklog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://coderthieunhi.github.io/FCJ2025-Internship-Report/en/2-proposal/tmp/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1889,4 +2094,3 @@
 
   </body>
 </html>
-
